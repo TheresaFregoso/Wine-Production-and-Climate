@@ -1,36 +1,80 @@
-# UCB Project 1
-Analysis of climate change impact to global wine production (1995 to 20??)
+# Wine Production and Climate Analysis Project
 
-## Team Members
-- Brenda McCourt
-- Theresa Fregoso
-- Rinal Shastri
-- Jeff Kim
-- Madison Outland
+---
+
+**Project Title:**  
+**Analysis of Climate Change Impacts on Global Wine Production (1995-2023)**  
+
+**Contributors:**  
+- Theresa Fregoso  
+- Jeff Kim  
+- Brenda McCourt  
+- Madison Outland  
+- Rinal Shastri  
+
+---
+
+## Overview
+
+This project explores the correlation between climate variables (such as temperature and precipitation) and global wine production. By leveraging data from various sources, including the NOAA Climate Data and the International Organization of Vine and Wine, this analysis investigates how climate has influenced wine production from 1995 to 2023.
+
+## Hypotheses
+
+- **Main Hypothesis:** There is a correlation between weather conditions and wine production.
+- **Null Hypothesis:** There is no measurable correlation.
 
 ## Research Questions
-1. Which were the top wine producing countries in year X?
-2. Which are the current top wine producing countries in year Y?
+
+1. Which were the top wine-producing countries in 1995?
+2. What are the top wine-producing countries in 2023?
 3. What is the correlation between temperature and wine production?
 4. What is the correlation between precipitation and wine production?
-5. What is the optimal temperature for maximum production?
-6. What is the optimal precipitation level for maximum wine production?
-7. For which countries has the climate changed to favorably or unfavorably impact wine production?
+5. What are the optimal temperature and precipitation levels for maximum wine production?
+6. How have changes in climate impacted wine production in different countries?
 
-## Datasets
-- International Organization of Vine and Wine
-  - [Statistics](https://www.oiv.int/what-we-do/statistics)
-  - [Database Discovery Tool](https://www.oiv.int/what-we-do/data-discovery-report?oiv)
+# Wine Production and Climate Analysis Project
 
-- NOAA National Centers for Environmental Information
-  - [Climate Data Online: Web Services Documentation](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted)
-  - [Data access](https://www.ncei.noaa.gov/access)
-  - [NCEI Data Service API User Documentation](https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation)
+## Visualizations
 
-   
-### Conclusion, one of many!
-![image](https://github.com/omomadcat/Viticulture/assets/114450824/c256d8a5-8a8e-4093-87e4-8f29dc0d6587)
+![Wine Production vs Temperature](Outputs/wine_production_vs_temperature.png)
 
-Based on the above graph, our data shows the following:
-- Wine Production Trend: There is a significant decreasing trend in wine production in France over the years.
-- Temperature Trend: There is an increasing trend in the mean maximum temperature, but the relationship is not statistically significant.
+Here is a scatter plot showing the correlation between wine production and average temperature.
+
+![Wine Production in 1995](Outputs/wine_production_1995_map.png)
+
+This plot shows the wine production in 1995
+
+![Top 10 in 2023](Outputs/Top10in2023.png)
+
+Top producing countries in 2023, the red line is the amount their production increased since 1995
+
+## Data Sources
+
+- **Wine Production Data:**
+  - International Organization of Vine and Wine ([link](https://www.oiv.int/what-we-do/statistics))
+  
+- **Climate Data:**
+  - NOAA National Centers for Environmental Information ([link](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#gettingStarted))
+
+## Tools and Libraries Used
+
+- **Python Packages:**
+  - `pandas`
+  - `matplotlib`
+  - `requests`
+  - `dotenv`
+  - `seaborn`
+  - `kaleido`
+
+## Project Structure
+
+1. **First_step_RetrieveClimateData.ipynb:** This notebook retrieves climate data (such as temperature and precipitation) for wine-producing countries using the NOAA API. It includes functions for fetching data for specific locations and years.
+  
+2. **Wine_Production_and_Climate_Analysis.ipynb:** This notebook focuses on analyzing the correlation between climate data and wine production. It processes the wine production data and performs statistical analysis to answer the research questions.
+
+## Running the Code
+
+To run the notebooks:
+
+1. Clone the repository and install the necessary Python packages by running `pip install -r requirements.txt`.
+2. Add your NOAA API token in a `.env` file in the following format:

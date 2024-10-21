@@ -1,0 +1,14 @@
+pandas
+matplotlib
+seaborn
+numpy
+scipy
+geopandas
+plotly
+nbformat
+ipywidgets
+shapely
+openpyxl
+scikit-learn
+statsmodels
+kaleido
