@@ -77,4 +77,4 @@ Top producing countries in 2023, the red line is the amount their production inc
 To run the notebooks:
 
 1. Clone the repository and install the necessary Python packages by running `pip install -r requirements.txt`.
-2. Add your NOAA API token in a `.env` file in the following format:
+2. Add your NOAA API token in a `.env` file in the following format: `NOAA_CLIMATE_DATA'='your API ke`
